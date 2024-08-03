@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Mobile Food Order</title>
+  </head>
+  <body>
+    <header class="header-text">
+      <p class="header-title">Gage's Diner</p>
+      <p class="header-subtitle">The best burgers and pizza in town.</p>
+    </header>
+    <main>
+      <div id="item-list"></div>
+      <div class="hidden" id="hidden">
+        <div class="shopping-cart" id="shopping-cart">
+          <p>Your order</p>
+        </div>
+        <div class="render-cart-items" id="render-cart-items"></div>
+        <div class="total-price-container">
+          <p>Total price:</p>
+          <span id="total-price"></span>
+        </div>
+        <button type="button" class="complete-btn" id="complete-btn">
+          Complete Order
+        </button>
+      </div>
+      <div class="card-details" id="card-details">
+        <h1 class="enter-details">Enter Card Details</h1>
+        <form class="form" id="form">
+          <input
+            type="text"
+            placeholder="Enter your name"
+            name="card-name"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Enter card number"
+            name="card-number"
+            required
+          />
+          <input type="text" placeholder="Enter CVV" name="card-cvv" required />
+          <button type="submit" class="pay-btn" id="pay-btn">Pay</button>
+        </form>
+      </div>
+      <div class="order-coming-message" id="order-coming-message"></div>
+    </main>
+    <script src="index.js" async type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Smythe&family=Source+Sans+3:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital@0;1&display=swap');
+
+:root {
+    --ItemTitle: #000000;
+    --CheckoutDivider: #393333;
+    --White: #FFFFFF;
+    --ItemDivider: #D2D2D2;
+    --ItemDescription: #8B8B8B;
+    --ItemRemoveText: #BBBBBB;
+    --AddCartButton: #DEDEDE;
+    --AddCartPlus: #3C3C3C;
+    --CompleteOrder: #16DB99;
+    --CardDetails: #757575;
+    --OrderConf: #ECFDF5;
+    --OrderConfText: #065F46;
+    --CardDetails: #757575;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Smythe';
+    width: 600px;
+    min-height: 1161px;
+}
+
+main {
+    width: 550px;
+    margin-left: 65px;
+}
+
+header {
+    background: url(/assets/Header.png);
+    background-size: cover;
+    color: var(--White);
+    width: 600px;
+    height: 167px;
+}
+
+.header-text {
+    padding: 10px 40px;
+}
+
+.header-title {
+    font-size: 38px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.header-subtitle {
+    font-size: 23px;
+    padding-top: 0px;
+    line-height: 0px;
+}
+
+.shop-item-line {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0px;
+    border-bottom: 1px solid var(--ItemDivider);
+}
+
+.shop-item {
+    display: flex;
+    line-height: 0px;
+}
+
+.item-info {
+    margin: 0px;
+    padding: 0px;
+}
+
+.item-name {
+    font-size: 28px;
+    margin: 12px 0 0 0;
+}
+
+.item-ingredients {
+    font-size: 16px;
+    color: var(--ItemDescription);
+    margin: 30px 0 0 0;
+}
+
+.item-price {
+    font-weight: bold;
+    margin: 30px 0 0 0;
+}
+
+.dollar-sign {
+    font-size: 16px;
+}
+
+.emoji {
+    margin-right: 30px;
+}
+
+.add-btn {
+    border-radius: 100%;
+    border: solid 2px var(--AddCartButton);
+    background-color: var(--White);
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+}
+
+.add-btn:hover {
+    font-size: 32px;
+    border: 3px solid var(--AddCartButton);
+}
+
+.add-btn:active {
+    font-size: 28px;
+    border: 1px solid var(--AddCartButton);
+}
+
+.your-order {
+    font-size: 28px;
+}
+
+.cart-items {
+    display: flex;
+    justify-content: space-between;
+    font-size: 28px;
+    padding-right: 0;
+}
+
+.dollar-sign-cart {
+    font-size: 28px;
+}
+
+.cart-item-name {
+    margin: 10px 0 0 0;
+}
+
+.shopping-cart {
+    display: flex;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.render-cart-items {
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--CheckoutDivider);
+}
+
+.complete-btn, .pay-btn {
+    background-color: var(--CompleteOrder);
+    border: none;
+    color: var(--White);
+    width: 500px;
+    padding: 12px;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.total-price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 28px;
+}
+
+.item-and-remove {
+    display: flex;
+    justify-content: space-between;
+}
+
+.remove-btn {
+    border: none;
+    background-color: var(--White);
+    color: var(--ItemRemoveText);
+    font-size: 14px;
+    font-family: 'Verdana', sans-serif;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.card-details {
+    display: none;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 500px;
+    width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 0 100px 10px;
+    background-color: var(--White);
+    font-family: 'Verdana', sans-serif;
+}
+
+.enter-details {
+    text-align: center;
+    margin: 40px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    margin: auto;
+}
+
+input {
+     margin: 0 0 20px 0;
+     padding: 20px 0 20px 30px;
+     border: 2px solid var(--CardDetails);
+}
+
+.pay-btn {
+    margin-top: 30px;
+    width: 550px;
+}
+
+.order-message {
+    font-size: 40px;
+    text-align: center;
+    background-color: var(--OrderConf);
+    color: var(--OrderConfText);
+    padding: 30px;
+    border-radius: 3px;
+}
