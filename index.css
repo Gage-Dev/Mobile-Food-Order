@@ -228,3 +228,36 @@ input {
     padding: 30px;
     border-radius: 3px;
 }
+
+/* For mobile devices */
+@media (max-width: 600px) {
+    body {
+      width: auto;
+      padding: 0 20px;
+    }
+  
+    main {
+      width: auto;
+      margin: 0;
+    }
+  
+    header {
+      width: auto;
+    }
+  
+    .form {
+      width: 100%;
+    }
+  
+    .pay-btn,
+    .complete-btn {
+      width: 100%;
+    }
+  
+    .card-details {
+      width: 80%;
+      height: auto;
+      padding: 20px;
+    }
+  }
+  
